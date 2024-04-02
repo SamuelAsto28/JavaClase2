@@ -1,5 +1,7 @@
 package ejercicios;
 
+import java.util.Scanner;
+
 /**
  * @author Samuel
  *
@@ -7,11 +9,14 @@ package ejercicios;
 public class Ejercicio1 {
 
 	public static void main(String[] args) {
+		// Se crea el objeto scanner que permite el ingreso de datos a través de la consola
+		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println(":)");
+		System.out.print("Ingrese un número real: ");
+		float x = scanner.nextFloat(); // Devuelve un valor de tipo float 
 		
-		int xd = 0;
+		scanner.close(); // Cierra el objeto scanner para 
 		
-		String texto = "a";
+		System.out.println("\nEl número ingresado es " + x);
 	}
 }
